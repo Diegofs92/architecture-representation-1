@@ -53,6 +53,15 @@ public class Architecture extends Variable {
     public String getName() {
         return name;
     }
+    public List<Concern> PrioritizedConcerns = new ArrayList<Concern>();
+        
+    public List<Concern> getPrioritizedConcerns(){
+        return PrioritizedConcerns;
+    }
+        
+    public void savePrioritizedConcerns(List<Concern> PrioriConcerns){
+        PrioritizedConcerns = PrioriConcerns;
+    }
 
     public List<Element> getElements() {
         final List<Element> elts = new ArrayList<Element>();
